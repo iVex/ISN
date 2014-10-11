@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-nb = input("4 chiffres à crypter: ")
+nb = int(input("4 chiffres à crypter: "))
 
-nb1, nb2, nb3, nb4 = int(nb[0]), int(nb[1]), int(nb[2]), int(nb[3])
+nb1, nb2, nb3, nb4 = int(nb/1000), int((nb%1000)/100), int((nb%100)/10), int((nb%10))
 
 nb1 = (nb1+7)%10
 nb2 = (nb2+7)%10
